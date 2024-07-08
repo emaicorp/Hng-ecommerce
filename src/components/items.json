@@ -5,14 +5,14 @@
         "name": "iPhone 15 Pro Max",
         "price": "200,000",
         "stars": 4,
-        "imgUrl": "/assets/images/iphone.png"
+        "imgUrl": "../assets/images/iphone.png"
       },
       {
         "id": 2,
         "name": "Laptop device",
         "price": "500,000",
         "stars": 0,
-        "imgUrl": "/assets/images/laptop.png"
+        "imgUrl": "../assets/images/laptop.png"
       },
       {
         "id": 3,
@@ -54,56 +54,56 @@
         "name": "Pair of men's black classic shoes",
         "price": "24,000",
         "stars": 3,
-        "imgUrl": "/assets/images/shoes.png"
+        "imgUrl": "../assets/images/shoes.png"
       },
       {
         "id": 9,
         "name": "Brown quality female bag",
         "price": "35,000",
         "stars": 3,
-        "imgUrl": "/assets/images/brownbag.png"
+        "imgUrl": "../assets/images/brownbag.png"
       },
       {
         "id": 10,
         "name": "Set of female cosmetic",
         "price": "20,000",
         "stars": 0,
-        "imgUrl": "/assets/images/cosmetics.png"
+        "imgUrl": "../assets/images/cosmetics.png"
       },
       {
         "id": 11,
         "name": "Female leader bag",
         "price": "40,000",
         "stars": 3,
-        "imgUrl": "/assets/images/bag1.png"
+        "imgUrl": "../assets/images/bag1.png"
       },
       {
         "id": 12,
         "name": "Colorful sport shoe",
         "price": "24,000",
         "stars": 3,
-        "imgUrl": "/assets/images/jordon.png"
+        "imgUrl": "../assets/images/jordon.png"
       },
       {
         "id": 13,
         "name": "Black Smart Watch ",
         "price": "60,000",
         "stars": 0,
-        "imgUrl": "/assets/images/smartwatch.png"
+        "imgUrl": "../assets/images/smartwatch.png"
       },
       {
         "id": 14,
         "name": "Modem Desktop computer",
         "price": "1,300.00",
         "stars": 3,
-        "imgUrl": "/assets/images/monitor.png"
+        "imgUrl": "../assets/images/monitor.png"
       },
       {
         "id": 15,
         "name": "Quality Photo camera",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/assets/images/camera.png"
+        "imgUrl": "../assets/images/camera.png"
       }
     ]
   }
