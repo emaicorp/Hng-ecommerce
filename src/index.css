@@ -1,13 +1,104 @@
+:root {
+  --primary-color: #003d28;
+  --white-color: #ffffff;
+  --dark-gray: #666666;
+  --accent-color: #f17020;
+  --shade-white: ;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container {
+  height: 243px;
+  background-color: var(--primary-color);
+  background-image: url("./assets/images/header-bg-2.svg");
+}
+.header-nav {
+  height: 50px;
+  z-index: 3;
+  
+}
+
+.logo{
+  width: 140px;
+height: 50px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+.list {
+  width: 464px;
+  height: 48px;
+
+  gap: 0px;
+  opacity: 0px;
+
+  div {
+    /* width: 100%; */
+    height: 100%;
+
+    input {
+      width: 411px;
+      height: 100%;
+      padding: 10px 16px 10px 16px;
+      /* gap: 10px; */
+      border-radius: 8px 0px 0px 8px;
+      opacity: 0px;
+      border: none !important;
+
+    }
+    .search-icon {
+      width: 51px;
+      height: 100%;
+      color: var(--white-color);
+      background-color: var(--accent-color);
+      border-radius: 0px 8px 8px 0px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+.user {
+  width: 357px;
+  height: 24px;
+  gap: 16px;
+  opacity: 0px;
+  gap: 16px;
+
+  span {
+    margin-right: 24px;
+    color: var(--white-color);
+    height: 100%;
+    gap: 16px;
+    
+    *{
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+}
+.header-text {
+  height: 177px;
+  z-index: 1;
+  h1 {
+    margin-bottom: 3vh;
+    color: var(--white-color);
+  }
 }
