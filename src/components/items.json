@@ -5,105 +5,105 @@
         "name": "iPhone 15 Pro Max",
         "price": "200,000",
         "stars": 4,
-        "imgUrl": "../assets/images/iphone.png"
+        "imgUrl": "/images/iphone.svg"
       },
       {
         "id": 2,
         "name": "Laptop device",
         "price": "500,000",
         "stars": 0,
-        "imgUrl": "../assets/images/laptop.png"
+        "imgUrl": "/images/laptop.png"
       },
       {
         "id": 3,
         "name": "Black headphones digital device",
         "price": "24,000",
         "stars": 3,
-        "imgUrl": "/assets/images/headset.png"
+        "imgUrl": "/images/headset.png"
       },
       {
         "id": 4,
         "name": "Gaming virtual reality headset",
         "price": "50,000",
         "stars": 3,
-        "imgUrl": "/assets/images/vr_headset.png"
+        "imgUrl": "/images/vr_headset.png"
       },
       {
         "id": 5,
         "name": "Air Condition",
         "price": "200,000",
         "stars": 0,
-        "imgUrl": "/assets/images/standingAc.png"
+        "imgUrl": "/images/standingAc.png"
       },
       {
         "id": 6,
         "name": "Blender",
         "price": "24,00",
         "stars": 3,
-        "imgUrl": "/assets/images/blender.png"
+        "imgUrl": "/images/blender.png"
       },
       {
         "id": 7,
         "name": "Air Fryer",
         "price": "60,000",
         "stars": 0,
-        "imgUrl": "/assets/images/airfrier.png"
+        "imgUrl": "/images/airfrier.png"
       },
       {
         "id": 8,
         "name": "Pair of men's black classic shoes",
         "price": "24,000",
         "stars": 3,
-        "imgUrl": "../assets/images/shoes.png"
+        "imgUrl": "/images/shoes.png"
       },
       {
         "id": 9,
         "name": "Brown quality female bag",
         "price": "35,000",
         "stars": 3,
-        "imgUrl": "../assets/images/brownbag.png"
+        "imgUrl": "/images/brownbag.png"
       },
       {
         "id": 10,
         "name": "Set of female cosmetic",
         "price": "20,000",
         "stars": 0,
-        "imgUrl": "../assets/images/cosmetics.png"
+        "imgUrl": "/images/cosmetics.png"
       },
       {
         "id": 11,
         "name": "Female leader bag",
         "price": "40,000",
         "stars": 3,
-        "imgUrl": "../assets/images/bag1.png"
-      },
+        "imgUrl": "/images/bag1.png"
+          },
       {
         "id": 12,
         "name": "Colorful sport shoe",
         "price": "24,000",
         "stars": 3,
-        "imgUrl": "../assets/images/jordon.png"
+        "imgUrl": "/images/jordon.png"
       },
       {
         "id": 13,
         "name": "Black Smart Watch ",
         "price": "60,000",
         "stars": 0,
-        "imgUrl": "../assets/images/smartwatch.png"
+        "imgUrl": "/images/smartwatch.png"
       },
       {
         "id": 14,
         "name": "Modem Desktop computer",
         "price": "1,300.00",
         "stars": 3,
-        "imgUrl": "../assets/images/monitor.png"
+        "imgUrl": "/images/monitor.png"
       },
       {
         "id": 15,
         "name": "Quality Photo camera",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "../assets/images/camera.png"
+        "imgUrl": "/images/camera.png"
       }
     ]
   }
