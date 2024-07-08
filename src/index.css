@@ -2,6 +2,7 @@
   --primary-color: #003d28;
   --white-color: #ffffff;
   --dark-gray: #666666;
+  --black-color: #000000;
   --accent-color: #f17020;
   --shade-white: #F7F7F7;
   --weight-400 : 400;
@@ -127,7 +128,7 @@ img{
   position: relative;
   padding: 10px 20px;
   background-color: white;
-  color: var(--accent-color);
+  color: var(--black-color);
   cursor: pointer;
   overflow: hidden;
   z-index: 1; /* Ensure the button text is on top */

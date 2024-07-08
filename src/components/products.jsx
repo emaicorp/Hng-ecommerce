@@ -1,6 +1,7 @@
 import React from 'react';
 import productData from './items'; 
 import AddToCartBtn from './addToCartBtn';
+import StarRating from './stars';
 
 const Product = () => {
   
@@ -18,7 +19,7 @@ const Product = () => {
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text price"><s>N</s>{product.price}</p>
-                <p className="card-text">Rating: {product.stars} stars</p>
+                <p className="card-text"><StarRating rating={product.stars} /></p>
                 <AddToCartBtn productId={product.id} />
               
               </div>
