@@ -3,7 +3,13 @@
   --white-color: #ffffff;
   --dark-gray: #666666;
   --accent-color: #f17020;
-  --shade-white: ;
+  --shade-white: #F7F7F7;
+  --weight-400 : 400;
+  --weight-600 : 600;
+  --weight-700 : 700;
+  --weight-800 : 800;
+  --font-size-smaller :18px;
+  --font-size-small : 28px;
 }
 
 body {
@@ -105,8 +111,8 @@ gap: 0px;
 .card-img-top{
 width: 100%;
 height: 280px;
+background-color: var(--shade-white);
 img{
-  border: 1px solid red !important;
 
   width: 100%;
   height: 100%;
@@ -147,4 +153,11 @@ img{
 .card-button button:hover {
   color: white; /* Change text color on hover */
 }
-
+.card-title{
+  font-size: var(--font-size-smaller);
+  font-weight: var(--weight-400);
+}
+.price{
+  font-size: var(--font-size-small);
+  font-weight: var(--weight-700);
+}
