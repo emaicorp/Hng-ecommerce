@@ -18,7 +18,7 @@ body {
 .header-container {
   height: 243px;
   background-color: var(--primary-color);
-  background-image: url("./assets/images/header-bg-2.svg");
+  background-image: url("../public/images/header-bg-2.svg");
 }
 .header-nav {
   height: 50px;
@@ -114,3 +114,37 @@ img{
   object-position: center;
 }
 }
+
+
+.card-button button {
+  border: 1px solid var(--accent-color) !important;
+  position: relative;
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--accent-color);
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1; /* Ensure the button text is on top */
+}
+
+.card-button button::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: all 0.5s ease;
+  z-index: -1; /* Place the pseudo-element behind the button text */
+}
+
+.card-button button:hover::before {
+  width: 100%;
+}
+
+.card-button button:hover {
+  color: white; /* Change text color on hover */
+}
+

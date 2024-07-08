@@ -1,5 +1,5 @@
-import logo from "../assets/images/logo-white.svg";
-import questionMark from "../assets/images/question.svg";
+// import logo from require("/images/logo-white.svg");
+// import questionMark from require("/images/question.svg");
 import * as Icon from 'iconsax-react';
 
 export default function Header({header}){
@@ -8,7 +8,7 @@ export default function Header({header}){
             <div className="container pt-2">
                 <nav className="d-flex justify-content-between header-nav align-items-center ">
                     <div className="logo h-100">
-                        <img src={logo} alt="" className="h-100 w-100" />
+                        <img src="/images/logo-white.svg" alt="" className="h-100 w-100" />
                     </div>
                     <div className="list">
                        <div className="input-group">
@@ -17,7 +17,7 @@ export default function Header({header}){
                        </div>
                     </div>
                     <div className="user d-flex d-flex  align-items-center ">
-                        <span className="icon-1 d-flex d-flex  align-items-center"><img src={questionMark} alt=""  /> Help <Icon.ArrowDown2/></span>
+                        <span className="icon-1 d-flex d-flex  align-items-center"><img src="/images/question.svg" alt=""  /> Help <Icon.ArrowDown2/></span>
                         <span className="icon-1 d-flex d-flex  align-items-center"><Icon.Profile /> Acoount <Icon.ArrowDown2/></span>
                         <span className="icon-2 d-flex d-flex  align-items-center"><Icon.ShoppingCart /></span>
 

@@ -12,7 +12,7 @@
         "name": "Laptop device",
         "price": "500,000",
         "stars": 0,
-        "imgUrl": "/images/laptop.png"
+        "imgUrl": "/images/laptop.svg"
       },
       {
         "id": 3,
