@@ -4,6 +4,8 @@ import Header from "../../components/header";
 import { Link } from 'react-router-dom';
 import * as Icon from 'iconsax-react';
 import CheckFee from '../../components/checkFee';
+import CartItem from '../../components/cartItem';
+import Footer from '../../components/footer';
 
 
 
@@ -19,11 +21,14 @@ export default function CartPage(){
 
             </div>
             <div className="container mt-5 mb-5">
-                <div className="row">
-                    <div className="col-md-8"></div>
-                    <div className="col-md-4 bg-white p-3"><CheckFee/></div>
+                <div className="row gap-4">
+                    <div className="col-md-7 bg-white p-5">
+                        <CartItem/>
+                    </div>
+                    <div className="col-md-4 bg-white p-3 checkFee"><CheckFee/></div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
  

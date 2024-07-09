@@ -16,7 +16,7 @@
 /* BACKGROUND IMAGES */
 .bg-main{
   background-color: var(--primary-color) !important;
-  color: var(--white-color);
+  color: var(--white-color) !important;
 }
 .bg-accent{
   background-color: var(--accent-color) !important;
@@ -41,6 +41,10 @@
 .accent-border{
   border: 1px solid var(--accent-color) !important;
   color: var(--black-color) !important;
+}
+.primary-border{
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 .border-bot{
   border-bottom: 1px solid var(--black-color);
@@ -401,7 +405,7 @@ padding: 0 !important;
   }
 }
 .footer{
-  background-color: var(--shade-white);
+  background-color: var(--white-color);
 
   .footCopy{
     height: 80px;
@@ -435,4 +439,10 @@ padding: 0 !important;
   button{
     font-size: 12px;
   }
+}
+.cart-item-div {
+  padding-bottom: 20px;
+}
+.checkFee{
+  height: fit-content !important;
 }

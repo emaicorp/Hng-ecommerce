@@ -2,7 +2,7 @@
 
 export default function CheckFee(){
     return(
-        <div>
+        <div className="checkFee">
             <div className="cart-summary border-bot d-flex justify-content-between align-items-center">
                 <h6>Cart Summary</h6>
                 <h6>1 item </h6>
