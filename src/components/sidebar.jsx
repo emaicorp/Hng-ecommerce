@@ -31,8 +31,8 @@ function Availability(){
 }
 export default function SidebarComponent(){
     return(
-        <div className="px-2">
-            <div className="category row gy-3">
+        <div className=" sidebar-container p-0 m-0  ">
+            <div className="category m-0 p-0 gy-3  ">
                 <DropDown btnName={"category"} dropItems={<Category/>}/>
                 <DropDown btnName={"Price"} dropItems={<ProgressBar/>}/>
                 <DropDown btnName={"Availability"} dropItems={<Availability/>}/>

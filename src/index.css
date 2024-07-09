@@ -17,6 +17,10 @@
   background-color: var(--primary-color);
   color: var(--white-color);
 }
+.bg-black{
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
 /* TEXT SIZES */
 .smaller{
   font-size: var(--font-size-smaller) !important;
@@ -126,15 +130,23 @@ gap: 0px;
     color: var(--white-color);
   }
 }
+.prod-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* width: 720px; */
+
+}
 
 .card-contaner{
-  width: 290px !important;
+  width: 260px !important;
   height: 494px !important;
   padding: 0 !important;
-  margin: 0;
+  margin: 0 !important;
 }
 .card{
-  width: 280px;
+  width: 100% !important;
   height: 494px !important;
   overflow: hidden;
 
@@ -201,17 +213,30 @@ img{
   font-size: var(--font-size-small);
   font-weight: var(--weight-700);
 }
-
+.products-container{
+  position: relative;
+  /* height: 100vh; Ensure the parent has a height */
+  overflow-y: hidden; /* Hide overflow to ensure the sidebar stays within bounds */
+  padding: 0 !important;
+}
 .sidebar {
-  width: 250px !important;
-  height: 50vh; /* Set the desired height */
-  position: fixed;
+  width: 30% !important;
+  position: sticky;
   overflow-y: scroll; /* Only vertical scroll */
-  overflow-x: hidden; /* Hide horizontal scroll */
 scroll-behavior: smooth;
+padding: 0 !important;
+
 
 }
+.sidebar-container{
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+.category{
+  width: 100% !important;
 
+}
 .sidebar::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -226,9 +251,9 @@ scroll-behavior: smooth;
 }
 
 .products{
-  margin-top: 0 !important;
-  margin-left: 250px; /* Offset by the sidebar width */
-  width: calc(100% - 250px);
+   /* margin-top: 0 !important; */
+  margin-left: 20px; 
+  width: 80% !important;
 }
 .util{
   position: absolute !important;
@@ -238,9 +263,10 @@ scroll-behavior: smooth;
 }
 .drop {
   position: relative;
-  width: 200px;
+  width: 100% !important;
   border: 1px solid var(--dark-gray); 
   padding: 10px;
+  margin-top: 20px;
 }
 
 .drop-btn {

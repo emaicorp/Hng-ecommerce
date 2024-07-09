@@ -3,17 +3,19 @@ import ReactDOM from 'react-dom';
 import Header from "../../components/header";
 import Products from "../../components/products";
 import SidebarComponent from '../../components/sidebar';
+import Newsletter from "../../components/newsLetter";
 
 export default function ProductsPage(){
     return(
-        <div>
+        <div className=''>
             <Header header={"Product Listing"}/>
-            <div className="container p-0 mt-5 mb-5">
-                <div className="row gap-1 m-0 p-0">
-                    <div className="col-md-2 sidebar"><SidebarComponent/></div>
-                    <div className="col-md-10  products"><Products /></div>
+            <div className="container p-0  mt-5 mb-5 px-0 products-container">
+                <div className="d-flex m-0 p-0">
+                    <div className=" sidebar sticky-top "><SidebarComponent/></div>
+                    <div className="  products"><Products /></div>
                 </div>
             </div>
+            <Newsletter/>
             
         </div>
     )

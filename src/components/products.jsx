@@ -9,10 +9,10 @@ const Product = () => {
   
   return (
     
-      <div className="row gap-3 m-0 w-100 ">
+      <div className=" m-0  p-0 prod-row gap-2">
         {productData.products.map(product => (
             
-          <div key={product.id} className="col-md-4 m-0  card-contaner">
+          <div key={product.id} className="col-md-4 m-0 p-o card-contaner">
             <div className="card mb-4">
                 <div className="card-img-top">
                 <img src={product.imgUrl} className="" alt={product.name} />
