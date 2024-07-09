@@ -49,7 +49,10 @@
 .border-bot{
   border-bottom: 1px solid var(--black-color);
 }
-
+/* TEXT COLORS */
+.accent-color{
+  color:var(--accent-color) !important;
+}
 /* CONTENT */
 body {
   margin: 0;
@@ -328,11 +331,41 @@ padding: 0 !important;
   text-decoration: none;
 }
 
+
 .drop-items a:hover {
   background-color: #f1f1f1;
 }
 
+.navDrop-items{
+  overflow: hidden;
+  width: 90%;
+  max-height: 0vh;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  margin: 0 !important;
+  backdrop-filter: blur(5px) !important;
+  background-color: #111b17a8;
+  span{
+    width: 80% !important;
+    padding: 10px;
+  }
+  
+  /* max-height: 200px;  */
+  transition: max-height 0.5s ease-out;
+}
+/* *{
+  border: 1px solid white;
+} */
+.navDrop-items.open {
+  max-height: 15vh;
 
+  /* position: relative;
+  z-index: 5; */
+  /* height: 200px !important; */
+
+ 
+}
 .progress-bar-container {
   width: 100%;
   max-width: 600px;
@@ -445,4 +478,46 @@ padding: 0 !important;
 }
 .checkFee{
   height: fit-content !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .list{
+    width: 100%;
+    div{
+      width: 100%;
+      input{
+        width: 285px !important;  
+      }
+    }
+  }
+  .header-text{
+    height: fit-content;
+  }
+  .span-border{
+    height: 5vh !important;
+    width: 3px !important;
+    border-radius: 3px;
+    background-color: var(--dark-gray);
+  }
+  .card-contaner{
+    width: 100% !important;
+  }
+  .products{
+    width: 95% !important;
+    /* padding: 10px; */
+  }
+  .products-div{
+    /* row-gap: 0 !important; */
+    flex-direction: column;
+    width:95% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center !important;
+  }
+  *{
+    /* border: 1px solid red !important; */
+  }
 }

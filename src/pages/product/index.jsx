@@ -13,7 +13,7 @@ export default function ProductsPage(){
             <Header header={"Product Listing"}/>
             <FilterCategory/>
             <div className="container p-0  mt-5 mb-5 px-0 products-container">
-                <div className="d-flex m-0 p-0">
+                <div className="d-flex m-0 p-0 products-div">
                     <div className=" sidebar sticky-top d-md-block d-none"><SidebarComponent/></div>
                     <div className="  products"><Products /></div>
                 </div>

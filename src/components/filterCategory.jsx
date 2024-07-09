@@ -16,7 +16,7 @@ export default function FilterCategory() {
 
   return (
     <div className='container mt-5'>
-      <div className="row">
+      <div className="row d-none d-md-flex">
         <div className="col-md-9">
           <div className="row">
             <h5 className='col-md-3'>Filter by Category</h5>
@@ -49,6 +49,16 @@ export default function FilterCategory() {
           
           </div>
         </div>
+      </div>
+      <div className="d-flex justify-content-between align-items-center d-md-none border border-2 rounded rounded-2 p-2">
+        <span className="d-flex justify-content-center align-items-center accent-color gap-2">
+          <Icon.FilterRemove/> Filter
+        </span>
+        <span className="span-border"> </span>
+        <span className="d-flex justify-content-center align-items-center accent-color gap-2">
+          <Icon.ArrowSwapVertical/> Sort
+        </span>
+
       </div>
     </div>
   );

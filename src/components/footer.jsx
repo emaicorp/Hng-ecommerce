@@ -7,7 +7,7 @@ export default function Footer(){
                     <div className="col-md-3">
                         <img src="/images/logo-black.svg" alt="" srcset="" />
                     </div>
-                    <div className="col-md-6 d-flex justify-content-between align-items-center">
+                    <div className="col-md-6 d-flex mt-md-0 mt-3 mb-md-0 mb-3 justify-content-between align-items-center">
                         <div className="ul">
                             <h6>About</h6>
                             <ul>
@@ -53,7 +53,7 @@ export default function Footer(){
                 
             </div>
             <div className="bg-main footCopy d-flex justify-content-center align-items-center mt-4">
-                <div className="container d-flex justify-content-between align-items-center">
+                <div className="container d-flex justify-content-between align-items-center flex-md-row flex-column">
                     <div className="privacy">
                         <a href="#" className="mx-3">Privacy Policy</a>
                         <a href="#">Terms Of Use</a>
