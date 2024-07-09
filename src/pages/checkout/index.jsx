@@ -16,7 +16,7 @@ export default function CheckoutPage(){
                         <CheckOutDetails />
                     </div>
                     <div className="col-md-4 bg-white checkFee">
-                        <CheckFee Link={"/checkout"}/>
+                        <CheckFee link={"/success"}/>
                     </div>
                 </div>
                 <CardInformation/>
