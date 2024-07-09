@@ -1,14 +1,17 @@
-import * as Icon from 'iconsax-react';
 
 
 export default function Newsletter(){
     return(
-        <div className="newsletter bg-black d-flex justify-content-center align-items-center">
-            <div className="col-md-6 border d-flex justify-content-center align-items-center flex-column">
+        <div className="newsletter bg-black px-md-0 px-3 d-flex justify-content-center align-items-center">
+            <div className="col-md-4  d-flex justify-content-center align-items-start flex-column">
                 <h3>Subscribe to our newsletter</h3>
-                <form>
-                    <input type="text" placeholder="Enter your email address" />
-                    <button type="submit">Subscribe</button>
+                <p className='mt-1'>Subscribe to our newsletter to get update  on our latest and exciting offers on all our products</p>
+                <form className='d-flex'>
+                    <div className="input-div d-flex mx-2 mt-1">
+                        <img src="/images/sms.svg" alt="" srcset="" className='mx-1' />
+                    <input type="text" placeholder="Email" />
+                    </div>
+                    <button type="submit" className='btn bg-accent'>Subscribe</button>
                 </form>
             </div>
         </div>
