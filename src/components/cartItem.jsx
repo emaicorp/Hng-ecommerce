@@ -5,7 +5,15 @@ import * as Icon from 'iconsax-react';
 
 
 export default function CartItem() {
-    const { cart } = useContext(CartContext);
+    const { cart, updateQuantity, removeFromCart } = useContext(CartContext);
+
+    const handleIncrement = (productId) => {
+      updateQuantity(productId, 1);
+    };
+  
+    const handleDecrement = (productId) => {
+      updateQuantity(productId, -1);
+    };
      const calculateIncreasedPrice = (priceString, percentage) => {
         const price = parseFloat(priceString.replace(/,/g, '').replace('N', '')); // Convert string to a number
         if (isNaN(price)) {
@@ -46,12 +54,12 @@ export default function CartItem() {
 
                     
                         <div className="quantity d-flex gap-3 justify-content-end mb-3 " id='incre-btn'>
-                            <div className="plus btn bg-main text-white p-1">
+                            <div className="plus btn bg-main text-white p-1" onClick={() => handleIncrement(item.id)}>
                                 <Icon.Add size="25" />
 
                             </div>
-                            <span>1</span>
-                            <div className="minus btn bg-main text-white p-1">
+                            <span>{item.quantity}</span>
+                            <div className={`minus btn bg-main text-white p-1 ${item.quantity <= 1 ? 'disabled':''}`} onClick={() => handleDecrement(item.id)} >
                                 <Icon.Minus size="25" />
                             </div>
                         </div>
@@ -59,7 +67,7 @@ export default function CartItem() {
 
                 </div>
                 <div className="cart-item-actions d-flex gap-3">
-                    <button className="btn primary-border smallest">Remove</button>
+                    <button className="btn primary-border smallest" onClick={() => removeFromCart(item.id)}>Remove</button>
                     <button className="btn primary-border smallest">Save For Later</button>
                 </div>
             </div>

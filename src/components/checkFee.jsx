@@ -11,7 +11,7 @@ export default function CheckFee({link}){
         price = 0
       ) : (
         cart.map((item, index) => (
-            price +=  parseFloat(item.price.replace(/,/g, ''))
+            price +=  parseFloat(item.price.replace(/,/g, ''))*item.quantity
         ))
     )}
     return(
