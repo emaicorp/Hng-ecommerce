@@ -11,6 +11,7 @@
   --weight-800 : 800;
   --font-size-smaller :18px;
   --font-size-small : 28px;
+  --font-size-smallest:12px;
 }
 /* BACKGROUND IMAGES */
 .bg-main{
@@ -21,6 +22,9 @@
   background-color: var(--accent-color) !important;
   color: var(--white-color);
 }
+.bg-shadow{
+  background-color: var(--shade-white) !important;
+}
 .bg-black{
   background-color: var(--black-color);
   color: var(--white-color);
@@ -29,6 +33,20 @@
 .smaller{
   font-size: var(--font-size-smaller) !important;
 }
+.smallest{
+  font-size: var(--font-size-smallest) !important;
+
+}
+/* BORDERS */
+.accent-border{
+  border: 1px solid var(--accent-color) !important;
+  color: var(--black-color) !important;
+}
+.border-bot{
+  border-bottom: 1px solid var(--black-color);
+}
+
+/* CONTENT */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -384,9 +402,7 @@ padding: 0 !important;
 }
 .footer{
   background-color: var(--shade-white);
-  .foot-nav {
 
-  }
   .footCopy{
     height: 80px;
   }

@@ -1,4 +1,6 @@
 import * as Icon from 'iconsax-react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header({header}){
     return(
@@ -17,7 +19,7 @@ export default function Header({header}){
                     <div className="user d-flex d-md-flex  align-items-center d-none ">
                         <span className="icon-1 d-flex d-flex  align-items-center"><img src="/images/question.svg" alt=""  /> Help <Icon.ArrowDown2/></span>
                         <span className="icon-1 d-flex d-flex  align-items-center"><Icon.Profile /> Acoount <Icon.ArrowDown2/></span>
-                        <span className="icon-2 d-flex d-flex  align-items-center"><Icon.ShoppingCart /></span>
+                        <span className="icon-2 d-flex d-flex  align-items-center">  <Link to="/cart" style={{color:'white'}}><Icon.ShoppingCart /></Link></span>
 
                     </div>
                 </nav>

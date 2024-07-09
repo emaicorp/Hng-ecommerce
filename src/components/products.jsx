@@ -22,7 +22,7 @@ const Product = () => {
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text price"><s>N</s>{product.price}</p>
                 <p className="card-text"><StarRating rating={product.stars} /></p>
-                <AddToCartBtn productId={product.id} />
+                <AddToCartBtn productId={product.id} text={"Add To Cart"} />
               
               </div>
               <div className="util d-flex justify-content-between align-items-center p-2">
