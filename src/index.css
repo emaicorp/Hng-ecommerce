@@ -134,7 +134,7 @@ gap: 0px;
   margin: 0;
 }
 .card{
-  /* width: 280px; */
+  width: 280px;
   height: 494px !important;
   overflow: hidden;
 
@@ -202,12 +202,31 @@ img{
   font-weight: var(--weight-700);
 }
 
-.sidebar{
+.sidebar {
   width: 250px !important;
-  height: fit-content;
+  height: 50vh; /* Set the desired height */
   position: fixed;
+  overflow-y: scroll; /* Only vertical scroll */
+  overflow-x: hidden; /* Hide horizontal scroll */
+scroll-behavior: smooth;
+
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  scrollbar-width:5px;
+}
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
 .products{
+  margin-top: 0 !important;
   margin-left: 250px; /* Offset by the sidebar width */
   width: calc(100% - 250px);
 }
@@ -217,3 +236,100 @@ img{
   width: 100% !important;
   z-index: 3;
 }
+.drop {
+  position: relative;
+  width: 200px;
+  border: 1px solid var(--dark-gray); 
+  padding: 10px;
+}
+
+.drop-btn {
+  padding: 16px;
+  cursor: pointer;
+}
+.icon {
+  transition: transform 0.3s ease-out;
+}
+
+.icon.rotate {
+  transform: rotate(180deg);
+}
+
+.drop-items {
+  overflow: hidden;
+  width: 100%;
+  max-height: 0;
+  
+  /* max-height: 200px;  */
+  transition: max-height 0.5s ease-out;
+}
+
+.drop-items.open {
+  max-height: 200px !important;
+}
+
+.drop-items a {
+  display: block;
+  color: black;
+  padding: 6px 10px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.drop-items a:hover {
+  background-color: #f1f1f1;
+}
+
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+  /* border: 1px solid red !important; */
+
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--accent-color)!important;
+  border-radius: 10px 0 0 10px;
+  /* position: relative; */
+  /* z-index: 3; */
+  /* border: 1px solid red !important; */
+}
+.progress::after{
+  content: "";
+  width: 100%;
+  height: 88%;
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-gray) !important;
+  opacity: 0.3 !important;
+  border-radius: 10px 0 0 10px;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-color)!important;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent the thumb from blocking mouse events */
+}
+
+
