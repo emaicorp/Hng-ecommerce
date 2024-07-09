@@ -1,5 +1,3 @@
-// import logo from require("/images/logo-white.svg");
-// import questionMark from require("/images/question.svg");
 import * as Icon from 'iconsax-react';
 
 export default function Header({header}){
@@ -12,7 +10,7 @@ export default function Header({header}){
                     </div>
                     <div className="list">
                        <div className="input-group">
-                        <input type="text" />
+                        <input type="text" placeholder='Search'/>
                         <div className="search-icon d-flex align-items-center justify-content-center"><Icon.SearchNormal/></div>
                        </div>
                     </div>

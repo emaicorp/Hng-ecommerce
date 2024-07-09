@@ -2,15 +2,17 @@ import React from 'react';
 import productData from './items'; 
 import AddToCartBtn from './addToCartBtn';
 import StarRating from './stars';
+import * as Icon from 'iconsax-react';
+
 
 const Product = () => {
   
   return (
-    <div className="container">
-      <div className="row">
+    
+      <div className="row gap-3 m-0 w-100 ">
         {productData.products.map(product => (
             
-          <div key={product.id} className="col">
+          <div key={product.id} className="col-md-4 m-0  card-contaner">
             <div className="card mb-4">
                 <div className="card-img-top">
                 <img src={product.imgUrl} className="" alt={product.name} />
@@ -23,12 +25,16 @@ const Product = () => {
                 <AddToCartBtn productId={product.id} />
               
               </div>
-             
+              <div className="util d-flex justify-content-between align-items-center p-2">
+                <div className="promo p-1 rounded bg-main smaller">-20%</div>
+                <div className="like"><Icon.Heart fill='red'/></div>
             </div>
+            </div>
+            
           </div>
           
         ))}
-      </div>
+  
     </div>
   );
 }

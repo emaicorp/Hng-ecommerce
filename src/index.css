@@ -12,7 +12,15 @@
   --font-size-smaller :18px;
   --font-size-small : 28px;
 }
-
+/* BACKGROUND IMAGES */
+.bg-main{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+/* TEXT SIZES */
+.smaller{
+  font-size: var(--font-size-smaller) !important;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -60,15 +68,29 @@ gap: 0px;
       border: none !important;
 
     }
+    input:focus-within{
+      border: none !important;
+      outline: none;
+    }
     .search-icon {
       width: 51px;
       height: 100%;
       color: var(--white-color);
       background-color: var(--accent-color);
       border-radius: 0px 8px 8px 0px;
+      transition: all 0.5s ease;
+      cursor: pointer;
       svg {
         width: 24px;
         height: 24px;
+        transition: all 0.5s ease;
+
+      }
+    }
+    .search-icon:hover{
+      opacity: 0.8;
+      svg{
+        scale:1.1;
       }
     }
   }
@@ -104,10 +126,25 @@ gap: 0px;
     color: var(--white-color);
   }
 }
-.card{
-  width: 302px !important;
-  height: 494px !important;
 
+.card-contaner{
+  width: 290px !important;
+  height: 494px !important;
+  padding: 0 !important;
+  margin: 0;
+}
+.card{
+  /* width: 280px; */
+  height: 494px !important;
+  overflow: hidden;
+
+}
+.card:hover{
+  .card-img-top{
+    img{
+      scale: 1.1;
+    }
+  }
 }
 .card-img-top{
 width: 100%;
@@ -119,6 +156,8 @@ img{
   height: 100%;
   object-fit: contain;
   object-position: center;
+  transition: all 0.5s ease;
+
 }
 }
 
@@ -161,4 +200,20 @@ img{
 .price{
   font-size: var(--font-size-small);
   font-weight: var(--weight-700);
+}
+
+.sidebar{
+  width: 250px !important;
+  height: fit-content;
+  position: fixed;
+}
+.products{
+  margin-left: 250px; /* Offset by the sidebar width */
+  width: calc(100% - 250px);
+}
+.util{
+  position: absolute !important;
+  height: 10vh !important;
+  width: 100% !important;
+  z-index: 3;
 }

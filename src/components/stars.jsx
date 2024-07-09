@@ -11,7 +11,7 @@ const StarRating = ({ rating }) => {
     return (
         <div>
             {filledStarsArray.map((star, index) => (
-                <span key={index} style={{ color: 'green',height:'24px' ,width:'24px' }}>{star}</span>
+                <span key={index} style={{ color: ' #34FA3B',height:'24px' ,width:'24px' }}>{star}</span>
             ))}
             {emptyStarsArray.map((star, index) => (
                 <span key={index + filledStars} style={{ color: 'gray' ,height:'24px',width:'24px'}}>{star}</span>
