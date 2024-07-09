@@ -20,7 +20,7 @@ export default function CardInformation() {
                 </div>
             </div>
 
-            <div class="row gy-md-3 w-md-50">
+            <div class="row  w-50 "id="atm-info">
                 <div class="col-md-6">
                     <label for="cc-name" class="form-label">Card Name</label>
                     <input type="text" class="form-control" id="cc-name" placeholder="Enter Card Name" required />
