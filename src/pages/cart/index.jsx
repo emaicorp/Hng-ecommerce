@@ -25,7 +25,7 @@ export default function CartPage(){
                     <div className="col-md-7 bg-white p-5">
                         <CartItem/>
                     </div>
-                    <div className="col-md-4 bg-white p-3 checkFee"><CheckFee/></div>
+                    <div className="col-md-4 bg-white p-3 checkFee"><CheckFee link={"/checkout"}/></div>
                 </div>
             </div>
             <Footer/>

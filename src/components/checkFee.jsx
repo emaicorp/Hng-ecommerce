@@ -1,6 +1,7 @@
 
+import { Link } from 'react-router-dom';
 
-export default function CheckFee(){
+export default function CheckFee({link}){
     return(
         <div className="checkFee">
             <div className="cart-summary border-bot d-flex justify-content-between align-items-center">
@@ -23,7 +24,7 @@ export default function CheckFee(){
                 <h6><s>N</s>50,000</h6>
             </div>
             <div className="mt-3 ">
-                <button className="btn bg-accent rounded text-white w-100">Checkout</button>
+            <Link to={link} className="text-white text-decoration-none"><button className="btn bg-accent rounded text-white w-100">Checkout</button></Link>
                 </div>
 
                 <div className="pay-cards d-flex justify-content-center gap-3 mt-3 align-items-center">
