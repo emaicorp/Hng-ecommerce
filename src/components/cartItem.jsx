@@ -25,22 +25,27 @@ export default function CartItem() {
           
         
             <div className='border-bot cart-item-div mb-3' key={index}>
-                <div className="cart-item d-flex   justify-content-between ">
-                    <div className="cart-item-img d-flex gap-3">
+                <div className="cart-item ">
+                    <div className="cart-item-img d-flex gap-md-3 w-100 ">
                         <img src={item.imgUrl} alt="" height={100} width={100} />
-                        <div className="card-item-text">
+                        <div className="card-item-text d-flex w-100  flex-md-row justify-content-between align-items-center flex-column">
+                            <div className="">
                             <h6>{item.name}</h6>
                             <p>In Stock</p>
+                            </div>
+                            <div className=" m-0 p-0 " id='price-tag'>
+                            <h6><s>N</s>{item.price}</h6>
+                        <p className="d-flex justify-content-between gap-3  align-items-center">
+                            <s>{calculateIncreasedPrice(item.price, 21)}</s>
+                            <p className="bg-main rounded smallest p-1 opacity-50 mt-3">-20</p>
+                        </p>
+                            </div>
                         </div>
                     </div>
                     <div className="cart-item-details">
 
-                        <h6><s>N</s>{item.price}</h6>
-                        <p className="d-flex justify-content-between align-items-center">
-                            <s>{calculateIncreasedPrice(item.price, 21)}</s>
-                            <p className="bg-main rounded smallest p-1 opacity-50">-20</p>
-                        </p>
-                        <div className="quantity d-flex gap-3">
+                    
+                        <div className="quantity d-flex gap-3 justify-content-end mb-3 " id='incre-btn'>
                             <div className="plus btn bg-main text-white p-1">
                                 <Icon.Add size="25" />
 

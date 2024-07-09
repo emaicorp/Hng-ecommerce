@@ -27,7 +27,7 @@ export default function Header({header}){
                     <div className="user d-flex   align-items-center gap-1 b justify-content-end ">
                         <span className="icon-1 d-md-flex  d-none  align-items-center"><img src="/images/question.svg" alt=""  /> Help <Icon.ArrowDown2/></span>
                         <span className="icon-1  d-md-flex  d-none align-items-center"><Icon.Profile /> Acoount <Icon.ArrowDown2/></span>
-                        <span className="icon-2  d-flex  align-items-center">  <Link to="/cart" style={{color:'white'}}><Icon.ShoppingCart /> <span className="bg-danger text-white">({cart.length})</span></Link></span>
+                        <span className="icon-2  d-flex  align-items-center">  <Link to="/cart" style={{color:'white'}} className='d-flex text-decoration-none'><Icon.ShoppingCart /> <span className="cart-count text-white">{cart.length}</span></Link></span>
                         <span className="icon-2 d-flex d-flex d-md-none align-items-center" onClick={drop}> <Icon.HambergerMenu /></span>
 
                     </div>
