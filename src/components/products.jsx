@@ -92,7 +92,7 @@ const Product = ({ selectedCategory, priceFilter }) => {
                       </div>
                       <div className="card-body">
                         <h5 className="card-title">{product.name}</h5>
-                        <p className="card-text price"><s>N</s>{product.current_price[0].NGN[0]}</p>
+                        <p className="card-text price"><s>N</s>{product.current_price[0].NGN[0].toLocaleString('en-NG', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
                         <p className="card-text"><StarRating rating={product.stars || 0} /></p>
                         <AddToCartBtn productId={product.id} text="Add To Cart" click={() => addToCart(product)} />
                       </div>
