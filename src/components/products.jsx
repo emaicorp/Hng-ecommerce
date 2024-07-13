@@ -11,7 +11,7 @@ const Product = ({ selectedCategory, priceFilter }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const api = `https://timbu-get-all-products.reavdev.workers.dev/products?organization_id=${process.env.REACT_APP_TIMBU_ORGANIZATION_ID}&reverse_sort=false&page=1&size=10&Appid=${process.env.REACT_APP_TIMBU_APP_ID}&Apikey=${process.env.REACT_APP_TIMBU_CLOUD_PUBLIC_KEY}`;
+  const api = `https://timbu-get-all-products.reavdev.workers.dev/products?organization_id=${process.env.REACT_APP_TIMBU_ORGANIZATION_ID}&reverse_sort=false&page=1&size=30&Appid=${process.env.REACT_APP_TIMBU_APP_ID}&Apikey=${process.env.REACT_APP_TIMBU_CLOUD_PUBLIC_KEY}`;
 
   useEffect(() => {
     setLoading(true);
