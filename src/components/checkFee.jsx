@@ -14,7 +14,7 @@ export default function CheckFee({ link, onCheckout }) {
         const numericPrice = parseFloat(cleanedPrice); // Convert to float
         if (!isNaN(numericPrice)) { // Ensure it's a valid number
           const priceWithMarkup = numericPrice * 1.20; // Add 20%
-          price += priceWithMarkup * item.quantity; // Perform the calculation
+          price += cleanedPrice * item.quantity; // Perform the calculation
         }
       }
     });
