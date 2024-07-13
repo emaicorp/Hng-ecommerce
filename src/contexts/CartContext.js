@@ -1,4 +1,3 @@
-// src/contexts/CartContext.js
 import React, { createContext, useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -37,9 +36,12 @@ export const CartProvider = ({ children }) => {
       return updatedCart;
     });
   };
+  const clearCart = () => {
+    setCart([]);
+  };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, updateQuantity, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, updateQuantity, removeFromCart,clearCart }}>
       {children}
     </CartContext.Provider>
   );

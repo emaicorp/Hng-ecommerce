@@ -2,11 +2,13 @@
   "name": "hng-ecommerce",
   "version": "0.1.0",
   "private": true,
+   "proxy": "https://api.timbu.cloud",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "iconsax-react": "^0.0.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
