@@ -18,7 +18,7 @@ export default function Header({ header }) {
       <div className="container pt-2">
         <nav className="d-flex justify-content-between header-nav align-items-center  ">
           <div className="logo h-100">
-            <img src="/images/logo-white.svg" alt="" className="h-100 w-100" />
+            <Link to={"/"}><img src="/images/logo-white.svg" alt="" className="h-100 w-100" /></Link>
           </div>
           <div className="list d-none d-md-block">
             <div className="input-group">

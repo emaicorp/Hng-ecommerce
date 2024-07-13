@@ -23,7 +23,7 @@ export default function ProductsPage() {
   return (
     <div className="">
       <Header header={"Product Listing"} />
-      <FilterCategory/>
+      <FilterCategory onCategoryChange={handleCategoryChange} onPriceChange={handlePriceChange}/>
       <div className="container p-0 mt-5 mb-5 px-0 products-container">
         <div className="d-flex m-0 p-0 products-div">
           <div className="sidebar sticky-top d-md-block d-none">

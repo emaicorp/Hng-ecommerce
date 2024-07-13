@@ -110,106 +110,106 @@
         "name": "Quality Pot",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/images/pot.png"
       },
       {
-        "id": 15,
+        "id": 17,
+        "name": "Quality Kitchen Knife",
+        "price": "10,000",
+        "stars": 3,
+        "imgUrl": "/images/kitchen.png"
+      },
+      {
+        "id": 18,
         "name": "Quality Photo camera",
         "price": "28,000",
         "stars": 3,
         "imgUrl": "/images/camera.png"
       },
       {
-        "id": 15,
+        "id": 19,
+        "name": "Samsung A10",
+        "price": "28,000",
+        "stars": 3,
+        "imgUrl": "/images/samsung.png"
+      },
+      {
+        "id": 20,
+        "name": "Itel P30",
+        "price": "28,000",
+        "stars": 3,
+        "imgUrl": "/images/itel.png"
+      },
+      {
+        "id": 21,
+        "name": "Quality Frying Pan",
+        "price": "28,000",
+        "stars": 3,
+        "imgUrl": "/images/frying.png"
+      },
+      {
+        "id": 22,
+        "name": "Samsung Fold",
+        "price": "28,000",
+        "stars": 3,
+        "imgUrl": "/images/Fold.png"
+      },
+      {
+        "id": 23,
+        "name": "Mini Fridge",
+        "price": "28,000",
+        "stars": 3,
+        "imgUrl": "/images/fridge.png"
+      },
+      {
+        "id": 24,
         "name": "Quality Photo camera",
         "price": "28,000",
         "stars": 3,
         "imgUrl": "/images/camera.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 25,
+        "name": "Quality Ketlle",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/images/kettle.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 26,
+        "name": "Quality Sound System",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/images/sound.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 27,
+        "name": "Rolex Watch",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/imagesrolexcamera.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 28,
+        "name": "Quality Sneakers",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/images/sneaker.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 29,
+        "name": "Quality Plate Set",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
+        "imgUrl": "/images/plate.png"
       },
       {
-        "id": 15,
-        "name": "Quality Photo camera",
+        "id": 30,
+        "name": "Quality Chair",
         "price": "28,000",
         "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
-      {
-        "id": 15,
-        "name": "Quality Photo camera",
-        "price": "28,000",
-        "stars": 3,
-        "imgUrl": "/images/camera.png"
-      },
+        "imgUrl": "/images/ppn.png"
+      }
     ]
   }
   
