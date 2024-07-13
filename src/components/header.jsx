@@ -20,7 +20,7 @@ export default function Header({ header }) {
           <div className="logo h-100">
             <Link to={"/"}><img src="/images/logo-white.svg" alt="" className="h-100 w-100" /></Link>
           </div>
-          <div className="list d-none d-md-block">
+          <div className="list d-none d-md-block" id='list'>
             <div className="input-group">
               <input type="text" placeholder='Search' />
               <div className="search-icon d-flex align-items-center justify-content-center"><Icon.SearchNormal /></div>
@@ -46,7 +46,7 @@ export default function Header({ header }) {
           <span className="icon-1 mx-1 d-flex   gap-3 align-items-center"><img src="/images/question.svg" alt="" /> Help </span>
           <span className="icon-1  d-flex  gap-3  align-items-center"><Icon.Profile /> Account </span>
         </div>
-        <div className="list list-sm mt-5  d-md-none">
+        <div className="list list-sm mt-5  d-md-none" id='list-sm'>
           <div className="input-group">
             <input type="text" placeholder='Search' />
             <div className="search-icon d-flex align-items-center justify-content-center"><Icon.SearchNormal /></div>

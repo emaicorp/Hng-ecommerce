@@ -26,7 +26,7 @@ export default function ProductsPage() {
       <FilterCategory onCategoryChange={handleCategoryChange} onPriceChange={handlePriceChange}/>
       <div className="container p-0 mt-5 mb-5 px-0 products-container">
         <div className="d-flex m-0 p-0 products-div">
-          <div className="sidebar sticky-top d-md-block d-none">
+          <div className="sidebar sticky-top d-md-block d-none" id='sidebar'>
             <SidebarComponent onCategoryChange={handleCategoryChange} onPriceChange={handlePriceChange} />
           </div>
           <div className="products">

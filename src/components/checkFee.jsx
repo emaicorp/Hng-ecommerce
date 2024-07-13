@@ -59,7 +59,7 @@ export default function CheckFee({ link, onCheckout }) {
       <div className="pay-cards-opt d-flex gap-3 align-items-center">
         <img src="/images/logos_mastercard.svg" alt="Mastercard" />
         <img src="/images/logos_visaelectron.svg" alt="Visa Electron" />
-        <img src="/images/american express.svg" alt="American Express" />
+        <img src="/images/american_express.svg" alt="American Express" />
       </div>
     </div>
   </div>

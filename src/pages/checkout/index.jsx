@@ -62,6 +62,9 @@ export default function CheckoutPage() {
     <div className="bg-shadow">
       <Header header={"Checkout"} />
       <div className="container mt-5">
+      <div className="card-button mb-5">
+                <button className='btn '><Icon.ArrowLeft/> <Link to="/cart" className='text-black text-decoration-none'>Back To Cart</Link></button>
+            </div>
         <div className="row gap-3 mb-5">
           <div className="col-md-7 bg-white">
             <CheckOutDetails onFormChange={handleFormChange} formErrors={formErrors} />

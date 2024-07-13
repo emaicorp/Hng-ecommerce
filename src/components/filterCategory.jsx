@@ -41,7 +41,7 @@ export default function FilterCategory({ onCategoryChange , onPriceChange}) {
 
   return (
     <div className="container mt-5">
-      <div className="row d-none d-md-flex">
+      <div className="row d-none d-md-flex" id='filter-md'>
         <div className="col-md-9">
           <div className="row">
             <h5 className="col-md-3">Filter by Category</h5>
@@ -74,7 +74,7 @@ export default function FilterCategory({ onCategoryChange , onPriceChange}) {
           </div>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center d-md-none border border-2 rounded rounded-2 p-2">
+      <div className="d-flex justify-content-between align-items-center d-md-none border border-2 rounded rounded-2 p-2" id='filter-sm'>
         <div className="drop-btn">
           <span className="d-flex filter-drop-btn justify-content-center align-items-center accent-color gap-2" onClick={drop}>
             <Icon.FilterRemove /> Filter
