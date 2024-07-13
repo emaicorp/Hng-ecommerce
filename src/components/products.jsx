@@ -74,7 +74,10 @@ const Product = ({ selectedCategory, priceFilter }) => {
   return (
     <div className="product-container">
       {loading ? (
-        <div>Loading...</div>
+        <div className='d-flex justify-content-center align-items-center' style={{height:"50vh"}}>
+          <div class="spinner-border accent-color" role="status" style={{height:"10vh", width:"10vh"}}>
+        <span class="visually-hidden">Loading...</span>
+      </div></div>
       ) : (
         <>
           <div className="m-0 p-0 prod-row gap-2">
